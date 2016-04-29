@@ -1,12 +1,136 @@
+<!DOCTYPE html>
 <html>
-<head>
-    <title></title>
-</head>
 <body>
-    <b>Please make sure you are accessing this page with your mobile</b>
-    <form action="action.php" method="POST">
-    Twitter Account
-    <input name="TwitterAccount" type="text" /> <br>
-    <input type="submit" name="submit" value="Save Data">
-</form>
+Here are a number of personality traits that may or may not apply to you. Please write a number next to
+each statement to indicate the extent to which you agree or disagree with that statement. You should rate the
+extent to which the pair of traits applies to you, even if one characteristic applies more strongly than the
+other.<br><br>
+1 = Disagree strongly
+2 = Disagree moderately
+3 = Disagree a little
+4 = Neither agree nor disagree
+5 = Agree a little
+6 = Agree moderately
+7 = Agree strongly<br><br>
+I see myself as:<br><br>
+
+
+
+<table style="width:50%">
+  <tr>
+     <td align="left">Extraverted, enthusiastic:</td>
+    <td><input type="text" id="txt1"></td> 
+  </tr>
+  <tr>
+     <td align="left">Critical, quarrelsome:</td>
+    <td><input type="text" id="txt2"></td> 
+  </tr>
+  <tr>
+     <td align="left">Dependable, self-disciplined:</td>
+    <td><input type="text" id="txt3"></td> 
+  </tr>
+    <tr>
+     <td align="left">Anxious, easily upset:</td>
+    <td><input type="text" id="txt4"></td> 
+  </tr>
+  <tr>
+     <td align="left">Open to new experiences, complex:</td>
+    <td><input type="text" id="txt5"></td> 
+  </tr>
+  <tr>
+     <td align="left">Reserved, quiet:</td>
+    <td><input type="text" id="txt6"></td> 
+  </tr>
+  <tr>
+     <td align="left">Sympathetic, warm:</td>
+    <td><input type="text" id="txt7"></td> 
+  </tr>
+  <tr>
+     <td align="left">Disorganized, careless:</td>
+    <td><input type="text" id="txt8"></td> 
+  </tr>
+  <tr>
+     <td align="left">Calm, emotionally stable:</td>
+    <td><input type="text" id="txt9"></td> 
+  </tr>
+  <tr>
+     <td align="left">Conventional, uncreative:</td>
+    <td><input type="text" id="txt10"></td> 
+  </tr>
+
+</table>
+
+   <form name="myform" action="./test.php" method="post" id="myform">
+	    Twitter Account        
+      <input name="TwitterAccount" type="text" /> <br>
+      <input type="submit" name="submit" value="Submit" />
+	<input type="hidden" name="demo" id="demo" />
+   </form>
+
+<script type="text/javascript">
+    
+
+	var t=[];
+	
+	var i,ex=0,a=0,c=0,e=0,o=0;
+	var tex, ta, tc, te,to;
+    
+    for (i = 1; i <11; i++)
+{
+	t[i] = parseInt(document.getElementById("txt"+i).value);
+	
+    if (i % 2==0 )
+	  switch (t[i]){
+	  case 1: t[i]=7; break;
+	  case 2: t[i]=6; break;
+  	  case 3: t[i]=5; break;
+  	  case 4: t[i]=4; break;
+  	  case 5: t[i]=3; break;
+	  case 6: t[i]=2; break;
+	  case 7: t[i]=1; break;
+
+	} 
+	
+	
+	
+	if (i==1 || i==6)
+	ex+=(t[i]);
+	if (i==2 || i==7)
+	a+=(t[i]);
+	if (i==3 || i==8)
+	c+=(t[i]);
+	if (i==4 || i==9)
+	e+=(t[i]);
+	if (i==5 || i==10)
+	o+=(t[i]);
+	
+}
+	if ((ex/2)<4.44)
+	tex="Introverted";
+	else
+	tex="Extroverted";
+	
+	if ((a/2)<5.23)
+	ta="Suspicious";
+	else
+	ta="Trusting";
+	
+	if ((c/2)<5.4)
+	tc="Impulsive";
+	else
+	tc="Careful";
+	
+	if ((e/2)<4.83)
+	te="Anxious";
+	else
+	te="Calmed";
+	
+	if ((o/2)<5.38)
+	to="Practical";
+	else
+	to="Creative";
+	
+	document.getElementById("demo").value = tex+" , "+ta+" , "+tc+" , "+te+" , "+to;
+</script>
 </body>
+</html>   
