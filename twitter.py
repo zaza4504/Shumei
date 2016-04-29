@@ -1,3 +1,12 @@
+
+'''
+    File name: twitter.py
+    Author: Paulina Durán
+    Date created: 4/21/2016
+    Date last modified: 4/29/2016
+    Python Version: 2.7
+'''
+
 import tweepy, bow
 import sys
 
