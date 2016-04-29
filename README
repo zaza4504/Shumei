@@ -1,0 +1,14 @@
+#Shumei
+Shumei Intelligent Mood Media System 
+
+Deploy the system
+
+1. Put devDetect.sh and twitter.py to the directory /where/you/want
+2. Put index.html and action.php to raspberrypi webserver html directory
+
+How to run
+
+1. Start webserver
+2. Run devDetect.sh
+
+That's it. Have fun! 
