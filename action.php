@@ -7,7 +7,7 @@ if(isset($_POST['MACAddress']) && isset($_POST['TwitterAccount'])) {
         die('There was an error writing this file');
     }
     else {
-        echo "$ret bytes written to file";
+        echo "\nConfiguration is Done. Enjoy! :)";
     }
 }
 else {
