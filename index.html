@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<!--
-    File name: index.html
-    Author: Stephanie Blue 
-    Date created: 4/14/2016
-    Date last modified: 4/29/2016
--->
-
 <html>
+
+<link rel="stylesheet" href="style_shumei.css" type="text/css" media="screen"/> 
 <body>
-Here are a number of personality traits that may or may not apply to you. Please write a number next to
-each statement to indicate the extent to which you agree or disagree with that statement. You should rate the
+
+<h1> Welcome to Shumei! </h1>
+Here are a number of personality traits that may or may not apply to you. <br>Please write a number next to
+each statement to indicate the extent to which you agree or disagree with that statement. <br>You should rate the
 extent to which the pair of traits applies to you, even if one characteristic applies more strongly than the
 other.<br><br>
 1 = Disagree strongly
@@ -19,64 +16,73 @@ other.<br><br>
 5 = Agree a little
 6 = Agree moderately
 7 = Agree strongly<br><br>
-I see myself as:<br><br>
-
 
 
 <table style="width:50%">
+<tr>
+<td id="inst" colspan="2">
+I see myself as:
+</td>
+<td style="background-color: rgb(255,210,14);"></td>
+</tr>
+
   <tr>
      <td align="left">Extraverted, enthusiastic:</td>
-    <td><input type="text" id="txt1"></td> 
+    <td align="center"><input type="text" style=" width: 100%;" id="txt1"></td> 
   </tr>
   <tr>
      <td align="left">Critical, quarrelsome:</td>
-    <td><input type="text" id="txt2"></td> 
+    <td align="center"><input type="text" style=" width: 100%;" id="txt2"></td> 
   </tr>
   <tr>
      <td align="left">Dependable, self-disciplined:</td>
-    <td><input type="text" id="txt3"></td> 
+    <td align="center"><input type="text" style=" width: 100%;" id="txt3"></td> 
   </tr>
     <tr>
      <td align="left">Anxious, easily upset:</td>
-    <td><input type="text" id="txt4"></td> 
+    <td align="center"><input type="text" style=" width: 100%;" id="txt4"></td> 
   </tr>
   <tr>
      <td align="left">Open to new experiences, complex:</td>
-    <td><input type="text" id="txt5"></td> 
+    <td align="center"><input type="text" style=" width: 100%;" id="txt5"></td> 
   </tr>
   <tr>
      <td align="left">Reserved, quiet:</td>
-    <td><input type="text" id="txt6"></td> 
+    <td align="center"><input type="text" style=" width: 100%;" id="txt6"></td> 
   </tr>
   <tr>
      <td align="left">Sympathetic, warm:</td>
-    <td><input type="text" id="txt7"></td> 
+    <td align="center"><input type="text" style=" width: 100%;" id="txt7"></td> 
   </tr>
   <tr>
      <td align="left">Disorganized, careless:</td>
-    <td><input type="text" id="txt8"></td> 
+    <td align="center"><input type="text" style=" width: 100%;" id="txt8"></td> 
   </tr>
   <tr>
      <td align="left">Calm, emotionally stable:</td>
-    <td><input type="text" id="txt9"></td> 
+    <td align="center"><input type="text" style=" width: 100%;" id="txt9"></td> 
   </tr>
   <tr>
      <td align="left">Conventional, uncreative:</td>
-    <td><input type="text" id="txt10"></td> 
+    <td align="center"><input type="text" style=" width: 100%;" id="txt10"></td> 
   </tr>
 
 </table>
+<br>
+<br>
 
+<div id="twitform">
+<span>Please type your Twitter handle to let Shumei do its magic.</span><br>
    <form name="myform" action="./test.php" method="post" id="myform">
-	    Twitter Account        
-      <input name="TwitterAccount" type="text" /> <br>
+	    Twitter Account:        
+      <input name="TwitterAccount" type="text" />
       <input type="submit" name="submit" value="Submit" />
 	<input type="hidden" name="demo" id="demo" />
    </form>
+</div>
 
 <script type="text/javascript">
     
-
 	var t=[];
 	
 	var i,ex=0,a=0,c=0,e=0,o=0;
@@ -95,7 +101,6 @@ I see myself as:<br><br>
   	  case 5: t[i]=3; break;
 	  case 6: t[i]=2; break;
 	  case 7: t[i]=1; break;
-
 	} 
 	
 	
@@ -140,4 +145,4 @@ I see myself as:<br><br>
 	document.getElementById("demo").value = tex+" , "+ta+" , "+tc+" , "+te+" , "+to;
 </script>
 </body>
-</html>   
+</html>

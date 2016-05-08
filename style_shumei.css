@@ -1,0 +1,41 @@
+body{
+  font-family: 'Montserrat', Arial, serif;
+  font-size: 1.1em;
+  font-weight: 40;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url('guyoncouch_blur.jpg');
+}
+
+table {
+background-color: rgb(255,210,14);
+padding: 20px;
+}
+
+td {
+background-color: white;
+padding: 5px;
+}
+
+#inst{
+text-align: center;
+background-color: rgb(255,210,14);
+text-align: center;
+font-weight: bold;
+padding-bottom: 10px;
+}
+
+#myform{
+background-color: #CCCCCC;
+padding: 20px;
+}
+
+h1{
+
+font-family: 'Montserrat', Arial, serif;
+  font-size: 1.5em;
+  font-weight: 40;
+  color: white;
+  background-color: #CCCCCC;
+  padding: 10px;
+}
