@@ -17,13 +17,13 @@ username = sys.argv[1];
 #pplType = sys.argv[2];
 
 
-consumer_key = "5kKdB7HnZ2130eWP4ogl76iLt";
-consumer_secret = "fZtdTXM5WSbmqfs4IQRC2TON8RFDHlsRjkzHiSDj2REba7QVrG";
+consumer_key = "xxxx";
+consumer_secret = "yyyy";
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 
-access_token = "246855939-4mJXSxiYOh0A4xYoJyJFiVnBi2KP0cw3fu69XCGi";
-access_token_secret = "WTk06KgTkTzNrz6Vc2UlMEZ31sheKTBaXrgnJx1XPF007";
+access_token = "zzzz";
+access_token_secret = "mmmm";
 
 auth.set_access_token(access_token, access_token_secret)
 
